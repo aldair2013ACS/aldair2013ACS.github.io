@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assitência Técnica</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+    
+    :root{
+        --cor1: #83C8F2;   
+        --cor2: black;  
+        --cor3: white;
+        --cor4: ;    
+
+        --font-padrao: Arial, verdana, helvetica, sans-serif;
+        --font-destaque: 'Bebas Neue', cursive;
+        --font-Champagne: 'Champagne', cursive;
+        }
+        *{
+        margin: 0px;
+        padding: 0px;
+        }
+
+        body {
+            background-color: #f0f8ff;
+            font-family: var(--font-padrao);
+        }
+
+        header{
+            background-image: linear-gradient(to left, var(--cor1), var(--cor2));
+            background-color: var(--cor2);
+            min-height: 40px;
+            text-align: center;
+            padding-top: 15px;
+        }
+
+        header > h1{
+            color: white;
+            font-family: var(--font destaque);
+            font-size: 2em;
+            font-weight: normal;
+            margin-bottom: 0px;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.137);
+        }
+
+        header > h5{
+            text-align: right;
+            margin-right: 40px;
+        }
+
+        nav{
+            background-color: var(--cor1);
+            background-image: linear-gradient(to left, var(--cor1), var(--cor2));
+            padding: 5px;      
+            margin-top: 0px;
+            margin-bottom: 20px;
+            
+        }
+
+        nav > a {
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            -o-transition-duration: 0.5s;
+        }
+
+        nav > a:hover{
+            background-color: var(--cor3);
+            color: black;
+        }
+
+        main {
+            min-width: 300px;
+            max-width: 1000px;
+            margin: auto;
+            margin-bottom: 30px;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.308);
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        main h1{
+            color: white;
+            font-family: var(--font-Champagne);
+            font-weight: normal;
+            font-size: 1.3em;
+            background-image: linear-gradient(to left, var(--cor1), var(--cor2));
+            background-color: var(--cor2);
+            text-indent: 8px;
+        }
+
+        main h2{
+            color: white;
+            font-family: var(--font-Champagne);
+            font-weight: normal;
+            font-size: 1.3em;
+            background-image: linear-gradient(to left, var(--cor1), var(--cor2));
+            background-color: var(--cor2);
+            text-indent: 8px;
+        }
+
+        main p{
+            margin: 15px 0px 15px 0px;
+            text-align: justify;
+            text-indent: 30px;
+            font-size: 1em;
+            line-height: 2em;
+            margin-bottom: 60px;
+        }
+
+        #formulario{
+            margin-bottom: 10px;
+            display: block;
+
+        }
+
+        .modal-title {
+            margin-bottom: -12px;
+            text-align: center;        
+        }
+
+        .tipo{
+            margin-bottom: 10px;
+        }
+     
+
+        .modal-dialog {
+            margin:0;
+            padding:0;
+            text-align: center;
+            
+
+        }
+        
+        .modal-footer {
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 5px;
+            text-align: center;
+
+        }
+
+
+        div.mapa{
+            background-color: #f0f8ff; 
+            margin: 0px -20px 30px -20px;
+            padding: 20px;
+            padding-bottom: 50%;
+            position: relative;
+        }
+
+        #teste{
+            margin-bottom: 40px;
+        }
+
+        div.mapa > iframe {
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%
+        }
+
+
+
+        footer{
+            background-color: var(--cor2);
+            background-image: linear-gradient(to left, var(--cor1), var(--cor2));
+            color: var(--cor3);
+            text-align: center;
+            font-size: 0.8em;
+            padding: 5px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>Assistência Técnica Manaus</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Atendimento</a>
+        <a href="#">Curiosidades</a>
+        <a href="#">Fale conosco</a></a>
+    </nav>
+   <main>
+       <article>
+        
+            <fieldset id="formulario">
+                <div class="modal-dialog" role="document">
+                    <div>
+                    <p class="modal-title" id="exampleModalLabel"><b></b> Preencha o formulario para continuar:</p></br>
+                    </div>
+                    <!-- Botao com opções  -->
+                
+                    <div class="tipo">
+                    <select name="tipoaparelho">
+                    <option selected="">Não especificado</option>
+                    <option> Iphone </option>
+                    <option> Samsung </option>
+                    <option> Motorola </option>
+                    <option> Xiaomi </option>
+                    <option> Outros </option>
+                    </select>
+                    </div>
+                     <!-- Formulario -->
+                    <div class="form-group">
+                    <input type="text" name="aparelho" required="" placeholder="Qual o modelo?" style="width: 50%;">
+                    </div>
+                    <div class="form-group">
+                    <input type="text" name="defeito" required="" placeholder="Qual o defeito? " style="width: 50%;">
+                    </div>
+                    <div class="form-group">
+                    <input type="text" required="" name="nome" placeholder="Seu nome" style="width: 50%;">
+                    </div>
+                    <div class="form-group">
+                    <input type="text" required="" name="email" placeholder="Seu e-mail" style="width: 50%;">
+                    </div>
+                    <div class="form-group">
+                    <input type="text" required="" name="telefone" placeholder="Seu telefone" class="telefone" style="width: 50%;">
+                    </div>
+                    <div class="form-group">
+                    <input type="text" required="" name="CEP" placeholder="CEP" style="width: 50%;">
+                    </div>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="submit" class="btn btn-success" data-loading-text="Enviando..." onclick="return goog_report_conversion()">Receber orçamento!!</button>
+                    </div>
+                    </form>
+                    </div>
+                    </div>
+                </form>
+            </fieldset>
+        
+    
+           <h1>Assistência Técnica Manaus para Celular  Samsung</h1>
+           <p>Como é de conhecimento de todos, a Samsung não ficou parada no mercado de smartphones e está entre os fabricantes que mais se preocupa com o estilo do seu consumidor, oferecendo aparelhos com muita conectividade.
+
+            Assistência Técnica em Manaus – Rede Multi Assistência não ficou para trás e disponibiliza a Assistência Técnica Para Celular Especializada em Conserto de Celulares Samsung.
+            
+            Sempre oferecendo um serviço de qualidade e satisfação aos clientes.</p>
+
+            <h2>Celulares/tablets</h2>
+            <p>
+                Troca de Bateria
+                Aparelhos que não ligam
+                Reparos em placa lógica
+                Trocas de tela
+                Conserto de Carcaça
+                Aparelho travado
+                Aparelhos molhados
+                Aparelho reiniciando
+                Problemas com LCD
+                Recuperação de arquivo
+                Problema de Touch
+                Sem sinal
+                Desligando sozinho
+                Não carrega
+                Câmera não funciona
+            </p>
+
+            <h2>
+                Assistência Técnica em Manaus iPhone
+            </h2>
+            <p>
+                Assistência Técnica em Manaus – Rede Multi Assistência presta serviços Especializados em Assistência Técnica Para Celular iPhone 2G / 3G /3Gs / 4 / 4s / iPhone 5 /5s/5c / iPhone 6 /6s / iPhone 7 / 7 Plus / iPhone 8 / 8 Plus / iPhone X / iPhone XR / iPhone XS / iPhone XS Max.
+
+                Faça um orçamento sem custo e receba rapidamente!
+
+                Serviços executados com agilidade e peças de qualidade nos tronou referência de mercado.
+            </p>
+           
+            </div>
+
+           
+
+       </article>
+
+           
+               <h2 id="teste">Onde estamos</h2>
+               <div class="mapa">
+                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.943040249935!2d-60.01645644936298!3d-3.109772841200022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926c054f1e0f8227%3A0x606c785c7a6faf27!2sFaculdade%20Martha%20Falc%C3%A3o%20-%20Wyden!5e0!3m2!1spt-BR!2sbr!4v1649267513231!5m2!1spt-BR!2sbr" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+           
+       
+
+
+
+
+   </main>
+    <footer>
+        <p>
+            Site criado por Pedro Robert, Aldair Cunha, Paulo Vitor e Dewson Paulo
+        </p>
+    </footer>
+    
+</body>
+</html>
